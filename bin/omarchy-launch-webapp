@@ -16,3 +16,4 @@ BROWSER_BIN="${3:-$DEFAULT_BROWSER_BIN}"
 shift 3 || true
 
 exec setsid uwsm app -- "$BROWSER_BIN" --profile-directory="$PROFILE" --app="$APP_URL" "$@"
+
