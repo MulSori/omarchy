@@ -8,4 +8,4 @@ else
   presentation_part="omarchy-show-logo"
 fi
 
-exec setsid uwsm app -- alacritty --class=Omarchy --title=Omarchy -e bash -c "$presentation_part; $cmd; omarchy-show-done"
+exec setsid uwsm app -- $TERMINAL --app-id=org.omarchy.terminal --title=Omarchy -e bash -c "$presentation_part; $cmd; omarchy-show-done"
